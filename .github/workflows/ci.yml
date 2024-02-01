@@ -31,3 +31,15 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+
+    - name: Build and push Docker image
+      env: 
+        DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
+        DOCKER_PASSWORD: ${{secrests.DOCKER_PASSWORD}}
+        DOCKER_IMAGE_NAME: lucaskrispim/teste01022024_1:latest
+      run: |
+      docker build -t $DOCKER_IMAGE_NAME .
+      echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
+      docker push $DOCKER_IMAGE_NAME
+
+      
