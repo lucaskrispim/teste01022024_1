@@ -35,7 +35,7 @@ jobs:
     - name: Build and push Docker image
       env: 
         DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
-        DOCKER_PASSWORD: ${{secrests.DOCKER_PASSWORD}}
+        DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
         DOCKER_IMAGE_NAME: lucaskrispim/teste01022024_1:latest
       run: |
         docker build -t $DOCKER_IMAGE_NAME .
