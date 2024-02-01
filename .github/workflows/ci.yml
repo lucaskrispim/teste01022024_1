@@ -38,5 +38,4 @@ jobs:
         DOCKER_PASSWORD: ${{secrests.DOCKER_PASSWORD}}
         DOCKER_IMAGE_NAME: lucaskrispim/teste01022024_1:latest
       run: |
-      docker build -t $DOCKER_IMAGE_NAME .
-
+        docker build -t $DOCKER_IMAGE_NAME .
