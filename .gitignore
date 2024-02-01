@@ -1,0 +1,36 @@
+# Dependências
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+coverage/
+
+# Diretórios de cache do runtime
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Diretórios de cache do diretório
+.cache/
+.tmp/
+
+# Arquivos de ambiente
+.env
+.env.test
+
+# Arquivos de configuração do editor
+.editorconfig
+
+# Diretório de saída de compilação
+dist/
+
+# Arquivos de configuração do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Diretório opcional npm
+npm-debug.log*
